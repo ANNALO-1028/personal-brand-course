@@ -288,6 +288,11 @@
     #results { background: var(--mist-white) !important; }
     #faq { background: var(--oat) !important; }
   }
+  .nav-cta-mobile { display: none; }
+  @media (max-width: 899px) {
+    .nav-cta-desktop { display: none; }
+    .nav-cta-mobile { display: inline-block; }
+  }
 
   footer { background: var(--cocoa); color: var(--camel); font-size: 0.82rem; }
 
@@ -307,7 +312,8 @@
       <li><a href="#pricing">方案</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="nav-cta" href="#pricing">查看方案</a>
+    <a class="nav-cta nav-cta-desktop" href="#pricing">查看方案</a>
+    <a class="nav-cta nav-cta-mobile" href="#founder">查看方案</a>
   </div>
 </nav>
 
