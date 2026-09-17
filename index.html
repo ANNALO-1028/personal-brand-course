@@ -282,6 +282,12 @@
   }
   @media (min-width: 900px) { #stickyMobile { display: none; } }
   @media (max-width: 899px) { body { padding-bottom: 88px; } }
+  @media (max-width: 899px) {
+    #pricing { display: none; }
+    #skool { background: var(--oat) !important; }
+    #results { background: var(--mist-white) !important; }
+    #faq { background: var(--oat) !important; }
+  }
 
   footer { background: var(--cocoa); color: var(--camel); font-size: 0.82rem; }
 
@@ -374,7 +380,11 @@
 <section id="content-course" style="background: var(--oat);">
   <div class="container-mid">
     <p class="eyebrow mb-3">PART 01｜CONTENT</p>
-    <h2 class="mb-2">內容經營課</h2>
+    <div class="flex flex-wrap items-baseline gap-3 mb-2">
+      <h2 class="mb-0">內容經營課</h2>
+      <span class="plan-price-list">US$109</span>
+      <span class="plan-price" style="font-size: 1.6rem;">US$69</span>
+    </div>
     <p class="tc-serif text-lg mb-2" style="color: var(--rose);">從「不知道發什麼」到建立自己的內容系統</p>
     <p class="text-sm mb-10" style="color: var(--camel);">約 3–4 小時完整課程</p>
 
@@ -422,7 +432,11 @@
 <section id="monetize-course">
   <div class="container-mid">
     <p class="eyebrow mb-3">PART 02｜MONETIZATION</p>
-    <h2 class="mb-2">流量變現課</h2>
+    <div class="flex flex-wrap items-baseline gap-3 mb-2">
+      <h2 class="mb-0">流量變現課</h2>
+      <span class="plan-price-list">US$129</span>
+      <span class="plan-price" style="font-size: 1.6rem;">US$79</span>
+    </div>
     <p class="tc-serif text-lg mb-2" style="color: var(--rose);">從「有人看」到讓個人品牌真正產生收入</p>
     <p class="text-sm mb-10" style="color: var(--camel);">約 3–4 小時完整課程</p>
 
