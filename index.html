@@ -150,6 +150,7 @@
   #hero { padding-top: 6rem; padding-bottom: 5rem; }
   @media (min-width: 768px) { #hero { padding-top: 8rem; padding-bottom: 6rem; } }
   #hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-family: 'Noto Serif TC',serif; letter-spacing: 0.01em; }
+  @media (max-width: 480px) { #hero h1 { font-size: 1.7rem; } }
 
   /* Pain point cards */
   .pain-card {
@@ -249,6 +250,12 @@
   .skool-shot img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
   .skool-shot.has-img { border: none; padding: 0; }
   .skool-num { font-family: 'Noto Serif TC',serif; font-size: 1.4rem; color: var(--rose); }
+  @media (max-width: 767px) {
+    .skool-step { gap: 0.4rem; }
+    .skool-num { font-size: 0.85rem; }
+    .skool-step p.tc-serif { font-size: 0.78rem; line-height: 1.3; }
+    .skool-step p.text-sm { font-size: 0.62rem; line-height: 1.4; }
+  }
 
   /* FAQ */
   .faq-item { border-bottom: 1px solid rgba(92,79,73,0.14); }
@@ -282,16 +289,9 @@
   }
   @media (min-width: 900px) { #stickyMobile { display: none; } }
   @media (max-width: 899px) { body { padding-bottom: 88px; } }
-  @media (max-width: 899px) {
-    #pricing { display: none; }
-    #skool { background: var(--oat) !important; }
-    #results { background: var(--mist-white) !important; }
-    #faq { background: var(--oat) !important; }
-  }
-  .nav-cta-mobile { display: none; }
-  @media (max-width: 899px) {
-    .nav-cta-desktop { display: none; }
-    .nav-cta-mobile { display: inline-block; }
+  @media (max-width: 767px) {
+    #pricing .plan-card:not(.featured) { display: none; }
+    #pricing .plan-card.featured { transform: none; max-width: 420px; margin: 0 auto; }
   }
 
   footer { background: var(--cocoa); color: var(--camel); font-size: 0.82rem; }
@@ -312,8 +312,7 @@
       <li><a href="#pricing">方案</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="nav-cta nav-cta-desktop" href="#pricing">查看方案</a>
-    <a class="nav-cta nav-cta-mobile" href="#founder">查看方案</a>
+    <a class="nav-cta" href="#pricing">查看方案</a>
   </div>
 </nav>
 
@@ -544,7 +543,7 @@
     <h2 class="text-center mb-3">第一次使用 Skool？<br class="md:hidden">購買課程只需要 6 個步驟</h2>
     <p class="text-center mb-16" style="opacity:0.8;">不需要擔心不會操作，整個購買流程非常簡單。</p>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-3 gap-3 md:gap-8">
       <div class="skool-step">
         <p class="skool-num">STEP 01</p>
         <p class="tc-serif font-bold">點擊按鈕進入 Skool</p>
