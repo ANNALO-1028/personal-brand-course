@@ -162,6 +162,11 @@
   }
   .pain-card:hover { box-shadow: var(--shadow-soft); transform: translateY(-3px); }
   .pain-quote { font-family: 'Noto Serif TC', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; }
+  @media (max-width: 767px) {
+    .pain-card { padding: 1.25rem; }
+    .pain-quote { font-size: 0.9rem; margin-bottom: 0.4rem; }
+    .pain-card p:not(.pain-quote) { font-size: 0.8rem; line-height: 1.5; }
+  }
 
 
   .ch-item { display: flex; gap: 1.25rem; padding: 1.5rem 0; border-bottom: 1px solid rgba(92,79,73,0.12); }
@@ -363,7 +368,7 @@
       </div>
     </div>
     <div class="mt-14 max-w-2xl mx-auto text-center">
-      <p class="mb-3" style="opacity:0.85;">如果你也有這些問題，你需要的可能不是再收藏更多「經營自媒體的 10 個技巧」。</p>
+      <p class="mb-3" style="opacity:0.85;">如果你也有這些問題，<br class="md:hidden">你需要的可能不是再收藏更多「經營自媒體的 10 個技巧」。</p>
       <p class="tc-serif font-bold text-lg">而是從頭建立一套完整系統。</p>
     </div>
   </div>
